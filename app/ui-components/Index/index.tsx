@@ -1,5 +1,11 @@
+import Hero from "./Hero/page";
+
 const Index = () => {
-  return <div className=""></div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default Index;
