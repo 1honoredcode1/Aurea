@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import { useInView } from "react-intersection-observer";
+
 import AboutImg1 from "@/public/about/about1.jpg";
 import AboutImg2 from "@/public/about/about2.jpg";
 import AboutImg3 from "@/public/about/about3.jpg";
@@ -36,6 +38,11 @@ const statsData = [
 ];
 
 export default function About() {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
   return (
     <>
       <div className="px-[8%] lg:px-[12%] py-20 about ">
@@ -77,16 +84,14 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="px-[8%] lg:px-[12%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+      <div
+        ref={ref}
+        className="px-[8%] lg:px-[12%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 "
+      >
         {statsData.map((item, index) => (
           <div key={index} className="about-card">
             <h2 className="text-5xl tracking-wider CalSans font-bold mb-6">
-              <CountUp
-                start={0}
-                end={item.value}
-                duration={2.5}
-                enableScrollSpy
-              />
+              {inView && <CountUp start={0} end={item.value} duration={2.5} />}
               {item.suffix}
             </h2>
             <div className="about-content py-6 border-t border-gray-400r">
