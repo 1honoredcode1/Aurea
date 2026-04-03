@@ -230,6 +230,52 @@ body {
   height: 80vh;
 }
 
+/** Services */
+.services:after {
+  content: "Auréa";
+  position: absolute;
+  line-height: 9rem;
+  bottom: 0;
+  left: 10%;
+  font-size: 12rem;
+  font-weight: 800;
+  font-family: var(--Audiowide);
+  opacity: 0.2;
+  color: gray;
+}
+
+.services:before {
+  content: "";
+  position: absolute;
+  background-image: url(@/public/backgrounds/services-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  bottom: -15%;
+  right: 10%;
+  height: 450px;
+  width: 800px;
+}
+
+.services-card:hover .services-img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.services-card:hover i {
+  transform: rotate(45deg);
+  background-color: var(--prim);
+  color: var(--white);
+  padding: 6px 10px;
+  border-radius: 50%;
+}
+
+.services-img {
+  transform: scale(0);
+  opacity: 0;
+  transition: var(--transition-slow);
+}
+
 @media (max-width: 991px) {
   .hero {
     height: auto;
@@ -261,6 +307,25 @@ body {
   .hero-image {
     height: auto;
   }
+
+  .about {
+    background-position: top center;
+  }
+  .services:after {
+    font-size: 8rem;
+  }
+
+  .services:before {
+    height: 350px;
+    bottom: -13%;
+    width: 500px;
+  }
+
+  .services-img {
+    transform: scale(1);
+    opacity: 1;
+    transition: var(--transition-slow);
+  }
 }
 
 @media (max-width: 575px) {
@@ -269,5 +334,8 @@ body {
   }
   .hero-content-img {
     top: 50% !important;
+  }
+  .services:before {
+    display: none;
   }
 }

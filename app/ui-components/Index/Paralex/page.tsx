@@ -58,7 +58,7 @@ const paralexData: ParalexItem[] = [
 
 export default function Paralex() {
   return (
-    <div className="mt-20 pb-30 ">
+    <div className="relative mt-20 pb-30">
       {paralexData.map((item) => (
         <ParalexSection key={item.id} item={item} />
       ))}
@@ -79,7 +79,7 @@ function ParalexSection({ item }: { item: ParalexItem }) {
   return (
     <motion.div
       ref={ref}
-      className="Paralex-wrap relative top-0 left-0 h-full"
+      className="Paralex-wrap relative h-screen overflow-hidden"
       style={{
         backgroundImage: `url(${item.bg})`,
         scale,
@@ -87,7 +87,7 @@ function ParalexSection({ item }: { item: ParalexItem }) {
         zIndex: item.id * 1,
       }}
     >
-      <div className="Paralex-content flex flex-col justify-between px-[8%] py-20 ">
+      <div className="Paralex-content  flex flex-col justify-between px-[8%] py-20 ">
         <div className="flex justify-between items-center gap-5">
           <span className="text-white GolosText border border-gray-300 px-4 p-2 rounded-full uppercase">
             {item.tag}
