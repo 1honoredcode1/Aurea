@@ -55,7 +55,9 @@ export default function About() {
           <div className="w-full lg:w-2/3">
             <h1 className="CalSans text-4xl md:text-7xl">
               We Shape{" "}
-              <span className="text-(--prim) ">Intrior Designs, Crafting </span>
+              <span className="text-(--prim) ">
+                Interior Designs, Crafting{" "}
+              </span>
               Timeless Elegance for Your Space.
             </h1>
           </div>
