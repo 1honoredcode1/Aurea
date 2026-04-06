@@ -1,5 +1,6 @@
 import About from "./About/page";
 import Expertise from "./Expertise/page";
+import FAQ from "./Faq/page";
 import Hero from "./Hero/page";
 import Paralex from "./Paralex/page";
 import PricingPlans from "./PricingPlans/page";
@@ -16,6 +17,7 @@ const Index = () => {
       <Expertise />
       <PricingPlans />
       <Testimonial />
+      <FAQ />
     </>
   );
 };
