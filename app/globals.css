@@ -362,6 +362,38 @@ body {
   background-size: cover;
 }
 
+/** Nerwletter */
+.newsletter {
+  z-index: 1;
+}
+
+.newsletter:after {
+  content: "";
+  position: absolute;
+  background-image: url(@/public/backgrounds/newsletter-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.newsletter:before {
+  content: "";
+  position: absolute;
+  background-image: url(@/public/backgrounds/newsletter-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  transform: rotateY(180deg);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 @keyframes Anim-scale {
   0% {
     transform: scale(0);
@@ -453,5 +485,8 @@ body {
     position: relative;
     width: 100%;
     height: 400px;
+  }
+  .newsletter:before {
+    display: none;
   }
 }

@@ -4,6 +4,7 @@ import Blog from "./Blog/page";
 import Expertise from "./Expertise/page";
 import FAQ from "./Faq/page";
 import Hero from "./Hero/page";
+import Newsletter from "./Newsletter/page";
 import Paralex from "./Paralex/page";
 import PricingPlans from "./PricingPlans/page";
 import Services from "./Services/page";
@@ -22,6 +23,7 @@ const Index = () => {
       <FAQ />
       <Banner />
       <Blog />
+      <Newsletter />
     </>
   );
 };
