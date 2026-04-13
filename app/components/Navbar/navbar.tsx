@@ -14,7 +14,7 @@ const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   {
     label: "Services",
-    href: "/ui-components/Services",
+    href: "/ui-components/Pages/Services",
   },
   {
     label: "Projects",
