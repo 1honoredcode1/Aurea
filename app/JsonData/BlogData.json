@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"image": "/hero/hero-img.jpg",
+		"imageDet": "/hero/hero-img.jpg",
+		"tag": "Interior Styling",
+		"postby": "Admin",
+		"date": "April 10, 2026",
+		"title": "How To Layer Texture In Modern Living Rooms",
+		"desc": "Discover practical ways to combine wood, fabric, stone, and lighting to create warm, modern spaces without visual clutter."
+	},
+	{
+		"id": 2,
+		"image": "/services/services1.jpg",
+		"imageDet": "/services/services1.jpg",
+		"tag": "Space Planning",
+		"postby": "Design Team",
+		"date": "April 8, 2026",
+		"title": "Small Apartment Layout Tricks That Actually Work",
+		"desc": "Use zoning, multi-purpose furniture, and negative space to make compact homes feel intentional, functional, and elegant. Avoid common pitfalls that make small spaces feel cramped or chaotic. Here are our top tips for maximizing every square foot without sacrificing style or comfort."
+	},
+	{
+		"id": 3,
+		"image": "/paralex/paralex1.jpg",
+		"imageDet": "/paralex/paralex1.jpg",
+		"tag": "Renovation",
+		"postby": "Editorial",
+		"date": "April 5, 2026",
+		"title": "Before And After: A Calm Minimal Bedroom Refresh",
+		"desc": "See how color balance, soft lighting, and smarter storage transformed a dated bedroom into a calm and contemporary retreat."
+	},
+	{
+		"id": 4,
+		"image": "/expertise/expertise2.jpg",
+		"imageDet": "/expertise/expertise2.jpg",
+		"tag": "Color Theory",
+		"postby": "Studio Notes",
+		"date": "April 2, 2026",
+		"title": "Choosing A Neutral Palette Without Making It Flat",
+		"desc": "Learn how undertones, contrast levels, and accent materials keep neutral interiors dynamic and visually rich."
+	},
+	{
+		"id": 5,
+		"image": "/team/team-1.jpg",
+		"imageDet": "/team/team-1.jpg",
+		"tag": "Design Process",
+		"postby": "Project Lead",
+		"date": "March 30, 2026",
+		"title": "From Moodboard To Reality: Our 5-Step Workflow",
+		"desc": "A behind-the-scenes look at how concept boards, material sampling, and client collaboration shape each final interior."
+	}
+]
