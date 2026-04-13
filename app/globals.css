@@ -354,6 +354,14 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+/** Banner */
+.banner {
+  background-image: url(@/public/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 @keyframes Anim-scale {
   0% {
     transform: scale(0);

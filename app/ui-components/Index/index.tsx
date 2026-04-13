@@ -1,4 +1,5 @@
 import About from "./About/page";
+import Banner from "./Banner/page";
 import Expertise from "./Expertise/page";
 import FAQ from "./Faq/page";
 import Hero from "./Hero/page";
@@ -18,6 +19,7 @@ const Index = () => {
       <PricingPlans />
       <Testimonial />
       <FAQ />
+      <Banner />
     </>
   );
 };

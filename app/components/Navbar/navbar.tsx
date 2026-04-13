@@ -128,11 +128,7 @@ const Navbar = () => {
               <h3 className="text-(--prim) GolosText ">+47 12312312 </h3>
             </div>
           </button>
-          <Link href="/ui-components/Pages/Contact">
-            <button className="bg-(--prim) text-white font-medium px-6 py-3 rounded-full hover:bg-(--white) hover:text-(--black) border border-transparent hover:border-gray-400 cursor-pointer transition-all duration-300  ">
-              Get a Quote!
-            </button>
-          </Link>
+
           <button
             className="lg:hidden text-2xl"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
