@@ -44,7 +44,7 @@ const ExpertiseData = [
 export default function Expertise() {
   return (
     <>
-      <div className="expertise bg-[#40262F] ">
+      <div className="expertise bg-(--text) ">
         <div className="px-[8%] lg:px-[12%] md:py-50 pt-10 pb-10 md:pb-[25%] relative">
           <div className="flex flex-col gap-10">
             <div className="w-full pt-8">
